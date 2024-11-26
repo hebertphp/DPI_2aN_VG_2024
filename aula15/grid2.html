@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela em Grid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      #grid-container {
+        border: 1px solid black; /* Borda geral */
+        width: 400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+        grid-auto-rows: 50px; /* Altura das linhas */
+        gap: 0; /* Remove os espaços entre os itens */
+      }
+
+      .item {
+        border: 1px solid black; /* Borda de cada item */
+        display: grid; /* Define cada item como um grid */
+        place-items: center; /* Centraliza horizontal e verticalmente */
+        text-align: center; /* Centraliza o texto dentro da célula */
+      }
+
+      .item1 {
+        background-color: red;
+      }
+
+      .item2 {
+        background-color: yellow;
+      }
+
+      .item3 {
+        background-color: green;
+      }
+    </style>
+</head>
+<body>
+<div id="grid-container">
+  <div class="item item1">Cod-prod</div>
+  <div class="item item2">Nome</div>
+  <div class="item item3">Valor</div>
+  <div class="item item4">Estoque</div>
+  <div class="item item1">100</div>
+  <div class="item item2">TV</div>
+  <div class="item item3">3000</div>
+  <div class="item item4">50</div>
+  <div class="item item1">110</div>
+  <div class="item item2">PS5</div>
+  <div class="item item3">4500</div>
+  <div class="item item4">10</div>
+  <div class="item item1">120</div>
+  <div class="item item2">PC</div>
+  <div class="item item3">5500</div>
+  <div class="item item4">5</div>
+</div>    
+</body>
+</html>
